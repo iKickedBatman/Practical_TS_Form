@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles/style.css">
+    <script src = "scripts/script.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <h1> Pet Rescue Registration </h1>
+    <form id = "sign-up">
+        <fieldset>
+            <legend> Details </legend>
+                <p>
+                    <label class="bars"> Name: </label>
+                    <input id = "name" type = "text" name = "name">
+                </p>
+                <p>
+                    <label class="non-bars"> Gender: </label>
+                    <input id = "isMale" type = "radio" name = "gender" value = "male">
+                    <label for = "male"> Male </label>
+                    <input id = "isFemale" type = "radio" name = "gender" value = "female">
+                    <label for = "female"> Female </label>
+                </p>
+                <p>
+                    <label class="bars"> Breed: </label>
+                    <input id = "breed" type = "text" name = "breed">
+                </p>
+                <p>
+                    <label class="bars"> Age: </label>
+                    <input id = "age" type = "number" name = "age">
+                </p>
+                <p>
+                    <label class="bars"> Color: </label>
+                    <input id = "color" type="text" name="color">
+                </p>
+                <p>
+                    <label class="non-bars"> Neutered: </label>
+                    <label for = "neuteredYes"> Yes </label>
+                    <input id = "neuteredYes" type = "radio" name = "neutered" value = "yes">
+                    <label for = "neuteredNo"> No </label>
+                    <input id = "neuteredNo" type = "radio" name = "neutered" value = "no">
+                    
+                </p>
+                <p>
+                    <label class="non-bars"> Chipped: </label>
+                    <label for = "chippedYes"> Yes </label>
+                    <input id = "chippedYes" type = "radio" name = "chipped" value = "yes">                    
+                    <label for = "chippedNo"> No </label>
+                    <input id = "chippedNo" type = "radio" name = "chipped" value = "no">
+                    
+                </p>
+                <p>
+                    <label> Temperament (Aggressiveness): </label>
+                    <input id = "temperament" type = "range"  name = "temperament" min = "0" max = "10" value="5">
+                    <span id="temperamentValue">5</span>
+                </p>
+                
+        </fieldset>
+    </form>
+                <button id = "submit" onclick= "Register()"> REGISTER </button>
+<hr>
+                <div id="tilesContainer"></div>
+</body>
+</html>
